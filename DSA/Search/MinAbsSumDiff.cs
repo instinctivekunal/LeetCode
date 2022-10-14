@@ -1,20 +1,15 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace Search
 {
     public class MinAbsSumDiff
     {
-        public static void Start()
+        public void Start()
         {
             int[] nums1 = {1,28,21};
             int[] nums2 = {9,21,20};
             Console.WriteLine(MinAbsoluteSumDiff(nums1, nums2));
         }
 
-        static int MinAbsoluteSumDiff(int[] nums1, int[] nums2)
+         int MinAbsoluteSumDiff(int[] nums1, int[] nums2)
         {
             if (nums1.Length==0) return 0;
             if (nums1.Length==1) return Math.Abs(nums1[0]-nums2[0]);

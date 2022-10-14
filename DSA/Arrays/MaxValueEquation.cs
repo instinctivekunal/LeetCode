@@ -1,13 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Arrays
+namespace DSA_C.Arrays
 {
+    #nullable disable
     public class MaxValueEquation
     {
-        public static void Start()
+        public void Start()
         {
             int[][] points = new int[][] {
                 new int[] {0,0}, 
@@ -17,7 +13,7 @@ namespace Arrays
             Console.WriteLine(FindMaxValueOfEquation(points, 3));
         }
 
-        static int FindMaxValueOfEquation(int[][] points, int k) 
+         int FindMaxValueOfEquation(int[][] points, int k) 
         {
             int max = int.MinValue;
             var q = new LinkedList<int[]>();

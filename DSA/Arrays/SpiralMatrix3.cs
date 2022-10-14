@@ -1,21 +1,16 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Arrays
+namespace DSA_C.Arrays
 {
     //Not Solved
     public class SpiralMatrix3
     {
-        public static void Start()
+        public void Start()
         {
             var mat = SpiralMatrixIII(5,6,1,4);
             foreach(int[] row in mat)
                 Console.WriteLine(string.Join("\t", row));
         }
         
-        static int[][] SpiralMatrixIII(int rows, int cols, int rStart, int cStart)
+         int[][] SpiralMatrixIII(int rows, int cols, int rStart, int cStart)
         {
             var ans = new int[rows][];
             int top = rStart;

@@ -1,19 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Arrays
+namespace DSA_C.Arrays
 {
     public class PrdArrayExceptSelf
     {
-        public static void Start()
+        public void Start()
         {
             int[] nums = {1,2,3,4,5};
             Console.WriteLine(string.Join(",", ProductExceptSelf2(nums)));
         }
 
-        static int[] ProductExceptSelf2(int[] nums) 
+         int[] ProductExceptSelf2(int[] nums) 
         {
             int n= nums.Length;
             int[] result = new int[n];
@@ -30,7 +25,7 @@ namespace Arrays
             return result;
         }
 
-        static int[] ProductExceptSelf1(int[] nums) 
+         int[] ProductExceptSelf1(int[] nums) 
         {
             var result = new int[nums.Length];    
             var prefix = 1;
@@ -53,7 +48,7 @@ namespace Arrays
             return result;       
         }
 
-        static int[] ProductExceptSelf(int[] nums) 
+         int[] ProductExceptSelf(int[] nums) 
         {
             int[] ans = new int[nums.Length];
             int i=0, j=1, prd=1;

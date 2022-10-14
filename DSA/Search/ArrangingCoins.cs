@@ -1,19 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace Search
 {
     public class ArrangingCoins
     {
-        public static void Start()
+        public void Start()
         {
             int num = 1804289383;
             Console.WriteLine(ArrangeCoins(num));
         }
 
-        static int ArrangeCoins(int n) 
+         int ArrangeCoins(int n) 
         {
             long start=0, end=n, coins=0, mid=0;
             while(start<=end)
@@ -32,7 +27,7 @@ namespace Search
             return (int)end;
         }
 
-        static int ArrangeCoins1(int n) 
+         int ArrangeCoins1(int n) 
         {
             int stair=1, count=0;
             while(n>0)            

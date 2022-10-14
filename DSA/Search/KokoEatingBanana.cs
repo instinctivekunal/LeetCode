@@ -1,20 +1,15 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace Search
 {
     public class KokoEatingBanana
     {
-        public static void Start()
+        public void Start()
         {
             int[] piles = {30,11,23,4,20};
             int h = 6;
             Console.WriteLine(MinEatingSpeed(piles, h));
         }
 
-        static int MinEatingSpeed(int[] piles, int h) 
+         int MinEatingSpeed(int[] piles, int h) 
         {
             int start=1;
             int end=piles.Max();
@@ -31,7 +26,7 @@ namespace Search
             return end;
         }
 
-        static bool Check(int[] piles, int mid, int h)
+         bool Check(int[] piles, int mid, int h)
         {
             int time=0;
             for(int i=0; i<piles.Length; i++)

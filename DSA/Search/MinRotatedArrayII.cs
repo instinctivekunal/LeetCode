@@ -1,19 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace Search
 {
     public class MinRotatedArrayII
     {
-        public static void Start()
+        public void Start()
         {
             int[] nums = {2,2,2,0,1};
             Console.WriteLine(FindMin(nums));
         }
 
-        static int FindMin(int[] nums) 
+         int FindMin(int[] nums) 
         {
             int start = 0, end = nums.Length -1, mid =0;
             while (start<end)            

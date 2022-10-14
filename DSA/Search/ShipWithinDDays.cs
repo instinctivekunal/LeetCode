@@ -1,20 +1,15 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace Search
 {
     public class ShipWithinDDays
     {
-        public static void Start()
+        public void Start()
         {
             int[] wgt = {1,2,3,4,5,6,7,8,9,10};
             int days = 5;
             Console.WriteLine(ShipWithinDays(wgt, days));
         }
 
-        static int ShipWithinDays(int[] weights, int days)
+         int ShipWithinDays(int[] weights, int days)
         {
             int start = weights.Max();
             int end = weights.Sum();

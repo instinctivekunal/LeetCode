@@ -1,19 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Arrays
+namespace DSA_C.Arrays
 {
     public class HouseRobber
     {
-        public static void Start()
+        public void Start()
         {
             int[] nums = {2,1,1,2};
             Console.WriteLine(Rob(nums));
         }
 
-        static int Rob(int[] nums) 
+        int Rob(int[] nums) 
         {
             int n = nums.Length;
             if (n==1) return nums[0];

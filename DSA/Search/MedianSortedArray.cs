@@ -1,20 +1,15 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace DSA_C.Search
 {
     public class MedianSortedArray
     {
-        public static void Start()
+        public void Start()
         {
             int[] nums1 = {1,2};
             int[] nums2 = {3,4};
             Console.WriteLine(FindMedianSortedArrays(nums1, nums2));
         }
 
-        static double FindMedianSortedArrays(int[] nums1, int[] nums2) 
+         double FindMedianSortedArrays(int[] nums1, int[] nums2) 
         {
             double ans = 0;
             int[] arr = Merge(nums1, nums2);
@@ -26,7 +21,7 @@ namespace DSA_C.Search
             return ans;
         }
 
-        static int[] Merge(int[] n1, int[] n2)
+         int[] Merge(int[] n1, int[] n2)
         {
             int n=n1.Length, m=n2.Length;
             int[] mix = new int[m+n];

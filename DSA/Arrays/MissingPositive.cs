@@ -1,20 +1,16 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Collections;
 
-namespace Arrays
+namespace DSA_C.Arrays
 {
     public class MissingPositive
     {
-        public static void Start()
+        public void Start()
         {
             int[] nums = {1,2,0};
             Console.WriteLine(string.Join(",", FirstMissingPositive(nums)));
         }
 
-        static int FirstMissingPositive(int[] nums) 
+         int FirstMissingPositive(int[] nums) 
         {
             int n=0;
             for (int i=0; i<nums.Length; i++)
@@ -43,7 +39,7 @@ namespace Arrays
             return n+1;
         }
 
-        static int FirstMissingPositive1(int[] nums) 
+         int FirstMissingPositive1(int[] nums) 
         {
             HashSet<int> inList = new HashSet<int>();
             for (int i=0; i<nums.Length; i++)
@@ -62,7 +58,7 @@ namespace Arrays
             return nums.Length;
         }
 
-        static int FirstMissingPositive2(int[] nums) 
+         int FirstMissingPositive2(int[] nums) 
         {
             var inList = new BitArray(int.MaxValue);
             for (int i=0; i<nums.Length; i++)

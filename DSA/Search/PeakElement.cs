@@ -1,19 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace Search
 {
     public class PeakElement
     {
-        public static void Start()
+        public void Start()
         {
             int[] arr = {1,2,1,3,5,6,4};
             Console.WriteLine(FindPeakElement(arr));
         }
 
-        static int FindPeakElement(int[] nums) 
+         int FindPeakElement(int[] nums) 
         {
             int start=0, end=nums.Length-1, mid=0;
             while(start<end)

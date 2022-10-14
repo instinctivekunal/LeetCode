@@ -1,19 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace Search
 {
     public class SingleElement
     {
-        public static void Start()
+        public void Start()
         {
             int[] nums = {1,2,2,3,3,4,4,8,8};
             Console.WriteLine(SingleNonDuplicate(nums));
         }
 
-        static int SingleNonDuplicate(int[] nums) 
+         int SingleNonDuplicate(int[] nums) 
         {
             int mid=0;
             int start=0, end=nums.Length-1;
@@ -36,7 +31,7 @@ namespace Search
             return nums[start];
         }
 
-        static int SingleNonDuplicate1(int[] nums) 
+         int SingleNonDuplicate1(int[] nums) 
         {
             for(int i=0; i<nums.Length-1; i+=2)
             {

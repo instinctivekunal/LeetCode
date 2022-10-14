@@ -1,19 +1,15 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace DSA_C.Sort
 {
     public class ThirdMaxNum
     {
-        public static void Start()
+        public void Start()
         {
             int[] nums = {1,2,-2147483648};
             Console.WriteLine(ThirdMax(nums));
         }
 
-        static int ThirdMax(int[] nums) 
+         int ThirdMax(int[] nums) 
         {
             long m1=long.MinValue, m2=long.MinValue, m3=long.MinValue;
             foreach(int n in nums)

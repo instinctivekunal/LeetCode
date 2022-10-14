@@ -1,19 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace Search
 {
     public class DuplicateNumber
     {
-        public static void Start()
+        public void Start()
         {
             int[] nums = {1,3,4,2,2};
             Console.WriteLine(FindDuplicate(nums));
         }
 
-        static int FindDuplicate(int[] nums) {
+         int FindDuplicate(int[] nums) {
             int i=0;
             while(i<nums.Length)
             {
@@ -34,7 +29,7 @@ namespace Search
             return -1;
         }
 
-        static void Swap(int[] arr, int first, int second)
+         void Swap(int[] arr, int first, int second)
         {
             int t = arr[first];
             arr[first] = arr[second];

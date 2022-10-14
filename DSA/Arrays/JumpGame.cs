@@ -1,19 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Arrays
+namespace DSA_C.Arrays
 {
     public class JumpGame
     {
-        public static void Start()
+        public void Start()
         {
             int[] nums = {2,3,1,1,1};
             Console.WriteLine(string.Join(",", CanJump(nums)));
         }
 
-        static bool CanJump(int[] nums) 
+         bool CanJump(int[] nums) 
         {
             int jump = nums.Length-1;            
             for (int i=nums.Length-2; i>=0; i--)

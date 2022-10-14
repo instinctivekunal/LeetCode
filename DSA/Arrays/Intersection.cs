@@ -1,20 +1,15 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Arrays
+namespace DSA_C.Arrays
 {
     public class Intersection
     {
-        public static void Start()
+        public void Start()
         {
             int[] nums1 = {1,2,2,3,4,1};
             int[] nums2 = {1,2,2,5,4,7,1};
             Console.WriteLine(string.Join(",", Intersect(nums1, nums2)));
         }
 
-        static int[] Intersect(int[] nums1, int[] nums2) 
+        int[] Intersect(int[] nums1, int[] nums2) 
         {
             Array.Sort(nums1);
             Array.Sort(nums2);

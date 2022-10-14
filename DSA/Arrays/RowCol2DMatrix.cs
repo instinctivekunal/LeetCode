@@ -1,13 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Arrays
+namespace DSA_C.Arrays
 {
     public class RowCol2DMatrix
     {
-        public static void Start()
+        public void Start()
         {
             int[][] mat = new int[][] {
                 new int[] {1,4,7,11,15}, 
@@ -19,7 +14,7 @@ namespace Arrays
             Console.WriteLine(SearchMatrix(mat, 55));
         }
 
-        static bool SearchMatrix(int[][] matrix, int target) 
+         bool SearchMatrix(int[][] matrix, int target) 
         {
             int r = 0;
             int c = matrix[0].Length-1;

@@ -1,20 +1,15 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace DSA_C.Search
 {
     public class SplitArrLargestSum
     {
-        public static void Start()
+        public void Start()
         {
             int[] nums = {7,2,5,10,8};
             int m =2;
             Console.WriteLine(SplitArray(nums, m));
         }
 
-        static int SplitArray(int[] nums, int m) 
+         int SplitArray(int[] nums, int m) 
         { 
             int sum=0;
             foreach(int num in nums)
@@ -33,7 +28,7 @@ namespace DSA_C.Search
             return start;
         }
 
-        static bool Check(int[] nums, int m, int min)
+         bool Check(int[] nums, int m, int min)
         {
             int sum=0, split=1;
             foreach(int num in nums)

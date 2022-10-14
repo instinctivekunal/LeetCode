@@ -1,13 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace Arrays
+namespace DSA_C.Arrays
 {
     public class ValidSudoku
     {
-        public static void Start()
+        public void Start()
         {
             char[][] board = new char[][] {
                 new char[] {'8','3','.','.','7','.','.','.','.'},
@@ -23,7 +19,7 @@ namespace Arrays
             Console.WriteLine(IsValidSudoku(board));
         }
 
-        static bool IsValidSudoku(char[][] board) 
+         bool IsValidSudoku(char[][] board) 
         {
             for(int r=0; r<board.Length; r++)
             {
@@ -36,12 +32,12 @@ namespace Arrays
             return true;
         }
 
-        static bool IsValid(char[][] board, int r, int c)
+         bool IsValid(char[][] board, int r, int c)
         {
             return NotInRow(board, r) && NotInCol(board, c) && NotInBox(board, r-r%3, c-c%3);
         }
 
-        static bool NotInRow(char[][] board, int r)
+         bool NotInRow(char[][] board, int r)
         {
             HashSet<char> res = new HashSet<char>();
             for(int i=0; i<9; i++)
@@ -55,7 +51,7 @@ namespace Arrays
             return true;
         }
 
-        static bool NotInCol(char[][] board, int c)
+         bool NotInCol(char[][] board, int c)
         {
             HashSet<char> res = new HashSet<char>();
             for(int i=0; i<9; i++)
@@ -69,7 +65,7 @@ namespace Arrays
             return true;
         }
 
-        static bool NotInBox(char[][] board, int r, int c)
+         bool NotInBox(char[][] board, int r, int c)
         {
             HashSet<char> res = new HashSet<char>();
             for(int i=0; i<3; i++)

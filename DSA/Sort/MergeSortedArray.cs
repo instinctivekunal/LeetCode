@@ -1,13 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace DSA_C.Sort
 {
     public class MergeSortedArray
     {
-        public static void Start()
+        public void Start()
         {
             int[] nums1 = {1};
             int m=1;
@@ -16,7 +11,7 @@ namespace DSA_C.Sort
             Merge(nums1, m, nums2, n);
         }
 
-        static void Merge(int[] nums1, int m, int[] nums2, int n) 
+         void Merge(int[] nums1, int m, int[] nums2, int n) 
         {         
             int i=m+n-1;
             m--;
@@ -31,7 +26,7 @@ namespace DSA_C.Sort
             }
         }
 
-        static void Merge1(int[] nums1, int m, int[] nums2, int n) 
+         void Merge1(int[] nums1, int m, int[] nums2, int n) 
         {         
             int i=m-1, j=n-1, k=m+n-1;
             while(i>=0 && j>=0)

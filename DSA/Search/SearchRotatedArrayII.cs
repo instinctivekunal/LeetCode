@@ -1,26 +1,21 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace Search
 {
     public class SearchRotatedArrayII
     {
-        public static void Start()
+        public void Start()
         {
             int[] nums = {2,5,6,0,0,1,2};
             int target = 0;
             Console.WriteLine(Search(nums, target));
         }
 
-        static bool Search(int[] nums, int target) 
+         bool Search(int[] nums, int target) 
         {
             int res = SearchElement(nums, target);
             return res<0? false: true;
         }
 
-        static int SearchElement(int[] nums, int target) 
+         int SearchElement(int[] nums, int target) 
         {
             int start = 0, end = nums.Length -1, mid =0;
             while (start<=end)            

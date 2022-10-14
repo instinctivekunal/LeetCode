@@ -1,20 +1,15 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Arrays
+namespace DSA_C.Arrays
 {
     public class FirstLastPosArray
     {
-        public static void Start()
+        public void Start()
         {
             int[] nums = {5,7,7,8,8,10};
             int target = 9;
             Console.WriteLine(string.Join(",", SearchRange(nums, target)));
         }
 
-        static int[] SearchRange(int[] nums, int target) 
+         int[] SearchRange(int[] nums, int target) 
         {
             int idx = BinarySearch(nums, target);
             if (idx < 0)
@@ -29,7 +24,7 @@ namespace Arrays
             return new int[] {left, right};
         }
 
-        static int BinarySearch(int[] nums, int target)
+         int BinarySearch(int[] nums, int target)
         {
             int start = 0;
             int end = nums.Length-1;

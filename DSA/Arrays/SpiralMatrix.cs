@@ -1,13 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Arrays
+namespace DSA_C.Arrays
 {
     public class SpiralMatrix
     {
-        public static void Start()
+        public void Start()
         {
             int[][] mat = new int[][] {
                 new int[] {1,4,7,11,15}, 
@@ -19,7 +14,7 @@ namespace Arrays
             Console.WriteLine(string.Join("\t", SpiralOrder(mat)));
         }
 
-        static IList<int> SpiralOrder(int[][] matrix) 
+         IList<int> SpiralOrder(int[][] matrix) 
         {
             IList<int> ans = new List<int>();
             int top = 0;

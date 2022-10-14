@@ -1,13 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Arrays
+namespace DSA_C.Arrays
 {
     public class SetMatrixZero
     {
-        public static void Start()
+        public void Start()
         {
             int[][] mat = new int[][] {
                 new int[] {0,1,2,0}, 
@@ -21,7 +16,7 @@ namespace Arrays
             }
         }
 
-        static void SetZeroes1(int[][] matrix) 
+        void SetZeroes1(int[][] matrix) 
         {
             int m = matrix.Length;
             int n = matrix[0].Length;
@@ -65,7 +60,7 @@ namespace Arrays
             }
         }
 
-        static void SetZeroes(int[][] matrix) 
+         void SetZeroes(int[][] matrix) 
         {
             int m = matrix.Length;
             int n = matrix[0].Length;

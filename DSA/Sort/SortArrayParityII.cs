@@ -1,19 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace DSA_C.Sort
 {
     public class SortArrayParityII
     {
-        public static void Start()
+        public void Start()
         {
             int[] nums = {4,2,5,7};
             Console.WriteLine(string.Join(",", SortArrayByParityIIInPlace(nums)));
         }
 
-        static int[] SortArrayByParityIIInPlace(int[] nums) {
+         int[] SortArrayByParityIIInPlace(int[] nums) {
             int n=nums.Length;
             int e=0, o=1;
             while(e<n && o<n)
@@ -33,7 +28,7 @@ namespace DSA_C.Sort
             return nums;
         }
 
-        static int[] SortArrayByParityII(int[] nums) {
+         int[] SortArrayByParityII(int[] nums) {
             int[] ans = new int[nums.Length];
             int i=0, j=1;
             foreach(int n in nums)

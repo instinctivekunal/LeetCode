@@ -1,19 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace Search
 {
     public class BinarySearch
     {
-        public static void Start()
+        public void Start()
         {
             int[] arr = {-1,0,3,5,9,12};
             Console.WriteLine(Search(arr, 2));
         }
 
-        static int Search(int[] nums, int target) 
+         int Search(int[] nums, int target) 
         {
             int mid=0;
             int start=0, end=nums.Length-1;

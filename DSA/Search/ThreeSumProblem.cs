@@ -1,19 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace Search
 {
     public class ThreeSumProblem
     {
-        public static void Start()
+        public void Start()
         {
             int[] nums = {0,0,0};
             var ans = ThreeSum(nums);
         }
 
-        static IList<IList<int>> ThreeSum(int[] nums) 
+         IList<IList<int>> ThreeSum(int[] nums) 
         {
             int target = 0;
             var len = nums.Length;

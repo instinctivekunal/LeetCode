@@ -1,20 +1,15 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace Search
 {
     public class FourSumProblem
     {
-        public static void Start()
+        public void Start()
         {
             int[] nums = {1000000000,1000000000,1000000000,1000000000};
             int target = -294967296;
             var ans = FourSum(nums, target);
         }
 
-        static IList<IList<int>> FourSum(int[] nums, int target) 
+         IList<IList<int>> FourSum(int[] nums, int target) 
         {
             var len = nums.Length;
             // Sort Array

@@ -1,20 +1,15 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace Search
 {
     public class IntersectionArray
     {
-        public static void Start()
+        public void Start()
         {
             int[] nums1 = {4,9,5};
             int[] nums2 = {9,4,9,8,4};
             Console.WriteLine(string.Join("\t",Intersection(nums1, nums2)));
         }
 
-        static int[] Intersection(int[] nums1, int[] nums2) 
+         int[] Intersection(int[] nums1, int[] nums2) 
         {
             List<int> ans = new List<int>();
             HashSet<int> set = new HashSet<int>();

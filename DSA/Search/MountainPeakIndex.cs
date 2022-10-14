@@ -1,19 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace Search
 {
     public class MountainPeakIndex
     {
-        public static void Start()
+        public void Start()
         {
             int[] arr = {1,3,5,6,10,9,7,4,2};
             Console.WriteLine(PeakIndexInMountainArray(arr));
         }
 
-        static int PeakIndexInMountainArray(int[] arr) 
+        int PeakIndexInMountainArray(int[] arr) 
         {
             int start=0, end = arr.Length-1, mid=0;
             while(start<end)

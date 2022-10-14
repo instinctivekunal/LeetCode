@@ -1,19 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace Search
 {
     public class SpecialArrayX
     {
-        public static void Start()
+        public void Start()
         {
             int[] arr = {0,4,3,0,4};
             Console.WriteLine(SpecialArray(arr));
         }
 
-        static int SpecialArray(int[] nums) 
+         int SpecialArray(int[] nums) 
         {
             int mid=0;
             int start=0, end=nums.Length;
@@ -31,7 +26,7 @@ namespace Search
             return -1;
         }
 
-        static int SpecialArray1(int[] nums) 
+         int SpecialArray1(int[] nums) 
         {
             Array.Sort(nums);
             int ans=0;

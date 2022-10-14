@@ -1,20 +1,15 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace Search
 {
     public class SquareRoot
     {
-        public static void Start()
+        public void Start()
         {
             int num = 2147395599;
             Console.WriteLine(MySqrt(num));
             Console.WriteLine(MySqrt1(num));
         }
 
-        static int MySqrt(int x) 
+         int MySqrt(int x) 
         {
             if (x == 0 || x == 1)
                 return x;
@@ -37,7 +32,7 @@ namespace Search
         }
 
         // Incorrect Logic
-        static int MySqrt1(int x) 
+         int MySqrt1(int x) 
         {
             if (x == 0 || x == 1)
                 return x;

@@ -1,13 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Arrays
+namespace DSA_C.Arrays
 {
     public class ContainsAllValues
     {
-        public static void Start()
+        public void Start()
         {
             int[][] mat = new int[][] {
                 new int[] {1,2,3}, 
@@ -17,7 +12,7 @@ namespace Arrays
             Console.WriteLine(CheckValid(mat));
         }
 
-        static bool CheckValid(int[][] matrix) 
+        bool CheckValid(int[][] matrix) 
         {
             int n = matrix.Length;
             for (int i=0; i<n; i++)

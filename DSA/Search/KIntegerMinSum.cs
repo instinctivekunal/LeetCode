@@ -1,20 +1,15 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace Search
 {
     public class KIntegerMinSum
     {
-        public static void Start()
+        public void Start()
         {
             int[] arr = {53,41,90,33,84,26,50,32,63,47,66,43,29,88,71,28,83};
             int k = 76;
             Console.WriteLine(MinimalKSum(arr, k));
         }
 
-        static long MinimalKSum(int[] nums, int k) 
+         long MinimalKSum(int[] nums, int k) 
         {
             long n=k;
             long sum = n*(n+1)/2;
@@ -34,7 +29,7 @@ namespace Search
         }
         
         // TLE
-        static long MinimalKSum1(int[] nums, int k) 
+         long MinimalKSum1(int[] nums, int k) 
         {
             HashSet<int> inList = new HashSet<int>();
             for(int i=0; i<nums.Length; i++)

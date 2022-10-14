@@ -1,8 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace DSA_C.Search
 {
     public class MountainFind
@@ -12,14 +7,14 @@ namespace DSA_C.Search
             public int Length() { return 0; }
         }
 
-        public static void Start()
+        public void Start()
         {
             int[] nums = {7,2,5,10,8};
             int target =2;
             Console.WriteLine(FindInMountainArray(target, new MountainArray()));
         }
 
-        static int FindInMountainArray(int target, MountainArray MA) 
+         int FindInMountainArray(int target, MountainArray MA) 
         {
             int n=MA.Length()-1;
             int l=0, r=n;

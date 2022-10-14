@@ -1,13 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace Search
 {
     public class SearchRotatedArray
     {
-        public static void Start()
+        public void Start()
         {
             int[] nums = {4,5,6,7,0,1,2};
             int target = 6;
@@ -15,7 +10,7 @@ namespace Search
         }
 
 
-        static int Search(int[] nums, int target) 
+         int Search(int[] nums, int target) 
         {
             int start = 0, end = nums.Length -1, mid =0;
             while (start<=end)            
@@ -41,7 +36,7 @@ namespace Search
             return -1;
         }
 
-        static int Search1(int[] nums, int target) 
+         int Search1(int[] nums, int target) 
         {
             if(nums.Length == 1)
             {
@@ -54,7 +49,7 @@ namespace Search
             return OrderAgnosticBS(nums, target, peak+1, nums.Length-1);                        
         }
 
-        static int PeakIndexInMountainArray(int[] arr) 
+         int PeakIndexInMountainArray(int[] arr) 
         {
             int start=0, end = arr.Length-1, mid=0;
             while(start<end)
@@ -70,7 +65,7 @@ namespace Search
             return start;
         }
 
-        static int OrderAgnosticBS(int[] nums, int target, int start, int end)
+         int OrderAgnosticBS(int[] nums, int target, int start, int end)
         {
             bool isAsc = nums[start]<nums[end];
             while(start<=end)

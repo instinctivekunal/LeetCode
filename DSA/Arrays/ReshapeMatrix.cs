@@ -1,14 +1,8 @@
-using System.Text.RegularExpressions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Arrays
+namespace DSA_C.Arrays
 {
     public class ReshapeMatrix
     {
-        public static void Start()
+        public void Start()
         {
             int[][] mat = new int[][] {
                 new int[] {1,2}, new int[] {3,4}
@@ -22,7 +16,7 @@ namespace Arrays
             }
         }
 
-        static int[][] MatrixReshape(int[][] mat, int r, int c)
+        int[][] MatrixReshape(int[][] mat, int r, int c)
         {
             int m = mat.Length;
             int n = mat[0].Length;
@@ -35,6 +29,18 @@ namespace Arrays
             {
                 res[i/c][i%c] = mat[i/n][i%n];
             }
+            return res;
+        }
+
+        int[][] Construct2DArray(int[] original, int r, int c)
+        {            
+            if (original.Length != r*c)
+                return new int[0][];
+            var res = new int[r][];
+            for (var q=0; q<r; q++) 
+                res[q] = new int[c];
+            for(int i=0; i<r*c; i++)
+                res[i/c][i%c] = original[i];
             return res;
         }        
     }    

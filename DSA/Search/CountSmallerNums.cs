@@ -1,19 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace DSA_C.Search
 {
     public class CountSmallerNums
     {
-        public static void Start()
+        public void Start()
         {
             int[] nums = {5,2,6,1};
             Console.WriteLine(string.Join(",",CountSmaller(nums)));
         }
 
-        static IList<int> CountSmaller(int[] nums) 
+         IList<int> CountSmaller(int[] nums) 
         {
             List<int> ans = new List<int>();
             List<int> sorted = new List<int>();
@@ -27,7 +22,7 @@ namespace DSA_C.Search
             return ans;
         }
 
-        static int BinarySearch(List<int> sorted, int target)
+         int BinarySearch(List<int> sorted, int target)
         {
             int min=0, max=sorted.Count;
             while(min<max)
@@ -43,7 +38,7 @@ namespace DSA_C.Search
 
 
 
-        static IList<int> CountSmaller1(int[] nums) 
+         IList<int> CountSmaller1(int[] nums) 
         {
             int n = nums.Length;
             List<int> ans = new List<int>();

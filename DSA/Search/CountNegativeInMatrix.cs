@@ -1,13 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace Search
 {
     public class CountNegativeInMatrix
     {
-        public static void Start()
+        public void Start()
         {
             int[][] grid = new int[][] {
                 new int[] {4,3,2,-1},
@@ -18,7 +13,7 @@ namespace Search
             Console.WriteLine(CountNegatives(grid));
         }
 
-        static int CountNegatives(int[][] grid) 
+         int CountNegatives(int[][] grid) 
         {
             int count = 0;
             int end=grid[0].Length;            
@@ -38,7 +33,7 @@ namespace Search
             return count;
         }
 
-        static int CountNegatives1(int[][] grid) 
+         int CountNegatives1(int[][] grid) 
         {
             int count = 0;
             for(int i=0; i<grid.Length; i++)

@@ -1,20 +1,15 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace Search
 {
     public class KthMissingNumber
     {
-        public static void Start()
+        public void Start()
         {
             int[] arr = {2,3,4,7,11};
             int k = 5;
             Console.WriteLine(FindKthPositive(arr, k));
         }
 
-        static int FindKthPositive(int[] arr, int k) 
+         int FindKthPositive(int[] arr, int k) 
         {
             HashSet<int> inList = new HashSet<int>();
             for(int i=0; i<arr.Length; i++)

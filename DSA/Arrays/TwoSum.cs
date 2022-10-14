@@ -1,21 +1,28 @@
-using System.Collections;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Arrays
+namespace DSA_C.Arrays
 {
     public class TwoSum
     {
-        public static void Start()
+        public void Start()
         {
-            int[] nums = {3,2,4};
-            int target = 6;
+            int[] nums = {1,1,1,1,1,4,1,1,1,1,1,7,1,1,1,1,1};
+            int target = 11;
             Console.WriteLine(string.Join(",", TwoSumMethod(nums, target)));
         }
 
-        static int[] TwoSumMethod(int[] nums, int target) 
+        int[] TwoSumMethod(int[] nums, int target) 
+        {
+            Dictionary<int, int> data = new Dictionary<int, int>();
+            for(int i=0; i<nums.Length; i++)
+            {
+                if (data.ContainsKey(target - nums[i]))
+                    return new int[]{data[target - nums[i]], i};
+                else
+                    data.TryAdd(nums[i], i);
+            }
+            return new int[]{0,0};
+        }
+
+        int[] TwoSumMethod1(int[] nums, int target) 
         {
             Dictionary<int, int> data = new Dictionary<int, int>();
             int[] ans = new int[2];

@@ -1,13 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Arrays
+namespace DSA_C.Arrays
 {
     public class MatrixSearch
     {
-        public static void Start()
+        // https://leetcode.com/problems/search-a-2d-matrix/
+        public void Start()
         {
             int[][] mat = new int[][] {
                 new int[] {1,2,3}, 
@@ -17,7 +13,7 @@ namespace Arrays
             Console.WriteLine(SearchMatrix(mat, 1));
         }
 
-        static bool SearchMatrix(int[][] matrix, int target) 
+        bool SearchMatrix(int[][] matrix, int target) 
         {
             int m = matrix.Length;
             int n = matrix[0].Length;

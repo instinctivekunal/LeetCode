@@ -1,19 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Arrays
+namespace DSA_C.Arrays
 {
     public class GoodArray
     {
-        public static void Start()
+        public void Start()
         {
             int[] nums = {3,6};
             Console.WriteLine(IsGoodArray(nums));
         }
 
-        static bool IsGoodArray(int[] nums) 
+         bool IsGoodArray(int[] nums) 
         {
             if (nums==null || nums.Length==0)
                 return true;
@@ -29,7 +24,7 @@ namespace Arrays
             return false;        
         }
 
-        static int GCD(int a, int b)
+         int GCD(int a, int b)
         {
             while (b!=0)
             {

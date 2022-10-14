@@ -1,26 +1,21 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace Search
 {
     public class PerfectSquare
     {
-        public static void Start()
+        public void Start()
         {
             int num = 5;
             Console.WriteLine(IsPerfectSquare(num));
         }
 
-        static bool IsPerfectSquare(int num) 
+         bool IsPerfectSquare(int num) 
         {
             if (num == 1)
                 return true;            
             return BinarySearch(num, 1, (num/2));
         }
 
-        static bool BinarySearch(int target, int start, int end)
+         bool BinarySearch(int target, int start, int end)
         {
             Console.WriteLine("S->{0}..{1}..{2}",target, start, end);            
             while(start<=end)

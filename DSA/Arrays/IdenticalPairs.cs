@@ -1,19 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Arrays
+namespace DSA_C.Arrays
 {
     public class IdenticalPairs
     {
-        public static void Start()
+        public void Start()
         {
             int[] nums = {1,2,3,1,1,3};
             Console.WriteLine(NumIdenticalPairs(nums));
         }
 
-        static int NumIdenticalPairs(int[] nums) 
+         int NumIdenticalPairs(int[] nums) 
         {  
             // Dictionary<int, int> data = new Dictionary<int, int>();
             // foreach(int num in nums)        

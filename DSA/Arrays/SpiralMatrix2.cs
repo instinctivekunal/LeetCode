@@ -1,20 +1,15 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Arrays
+namespace DSA_C.Arrays
 {
     public class SpiralMatrix2
     {
-        public static void Start()
+        public void Start()
         {
             var mat = GenerateMatrix(5);
             foreach(int[] row in mat)
                 Console.WriteLine(string.Join("\t", row));
         }
 
-        static int[][] GenerateMatrix(int n) 
+         int[][] GenerateMatrix(int n) 
         {
             var ans = new int[n][];
             int top = 0;

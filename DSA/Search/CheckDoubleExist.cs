@@ -1,19 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace Search
 {
     public class CheckDoubleExist
     {
-        public static void Start()
+        public void Start()
         {
             int[] arr = {-2,0,10,4,6,-8};
             Console.WriteLine(CheckIfExist(arr));
         }
 
-        static bool CheckIfExist(int[] arr)
+         bool CheckIfExist(int[] arr)
         {
             Array.Sort(arr);
             for(int i=0; i<arr.Length; i++)
@@ -25,7 +20,7 @@ namespace Search
             return false;
         }
 
-        static int BinarySearch(int[] nums, int target)
+         int BinarySearch(int[] nums, int target)
         {
             int mid=0;
             int start=0, end=nums.Length-1;
@@ -42,7 +37,7 @@ namespace Search
             return -1;
         }
 
-        static bool CheckIfExist1(int[] arr)
+         bool CheckIfExist1(int[] arr)
         {
             HashSet<int> data = new HashSet<int>();
             for(int i=0; i<arr.Length; i++)

@@ -1,19 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace DSA_C.Sort
 {
     public class SortedArraySquares
     {
-        public static void Start()
+        public void Start()
         {
             int[] nums = {-4,-1,0,3,10};
             Console.WriteLine(string.Join(",", SortedSquares(nums)));
         }
 
-        static int[] SortedSquares(int[] nums) 
+         int[] SortedSquares(int[] nums) 
         {
             int n=nums.Length;
             int l=0, r=n-1;

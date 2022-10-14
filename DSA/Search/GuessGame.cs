@@ -1,19 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace Search
 {
     public class GuessGame
     {
-        public static void Start()
+        public void Start()
         {
             int num = 10;
             Console.WriteLine(GuessNumber(num));
         }
 
-        static int GuessNumber(int n)
+         int GuessNumber(int n)
         {
             int start=1, end=n;
             while(start<=end)

@@ -1,21 +1,15 @@
-using System.Collections;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Arrays
+namespace DSA_C.Arrays
 {
     public class TwoSumII
     {
-        public static void Start()
+        public void Start()
         {
             int[] nums = {2,3,4};
             int target = 6;
             Console.WriteLine(string.Join(",", TwoSum(nums, target)));
         }
 
-        static int[] TwoSumPointer(int[] numbers, int target)
+         int[] TwoSumPointer(int[] numbers, int target)
         {
             int left=0, right=numbers.Length-1;
             while(left<right)
@@ -28,7 +22,7 @@ namespace Arrays
             return new int[2];
         }
 
-        static int[] TwoSum(int[] numbers, int target) 
+         int[] TwoSum(int[] numbers, int target) 
         {
            int n = numbers.Length;
            for (int i=0; i<n; i++)
@@ -41,7 +35,7 @@ namespace Arrays
            return new int[2];
         }
 
-        static int BinarySearch(int[] nums, int target, int start, int end)
+         int BinarySearch(int[] nums, int target, int start, int end)
         {
             int mid=0;
             while(start<=end)

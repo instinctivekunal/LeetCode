@@ -1,19 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace Search
 {
     public class ReachANumber
     {
-        public static void Start()
+        public void Start()
         {
             int target = 3;
             Console.WriteLine(ReachNumber(target));
         }
         
-        static int ReachNumber(int target) 
+         int ReachNumber(int target) 
         {
             int sum=0, jump=1;
             target=Math.Abs(target);            

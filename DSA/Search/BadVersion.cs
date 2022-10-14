@@ -1,19 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace Search
 {
     public class BadVersion
     {
-        public static void Start()
+        public void Start()
         {
             int num = 10;
             Console.WriteLine(FirstBadVersion(num));
         }
 
-        static int FirstBadVersion(int n)
+         int FirstBadVersion(int n)
         {
             int start=1, end=n, mid=1;
             while(start<=end)

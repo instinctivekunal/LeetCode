@@ -1,20 +1,15 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace Search
 {
     public class SearchInsertPosition
     {
-        public static void Start()
+        public void Start()
         {
             int[] nums = {1,3,5,6};
             int target = 5;
             Console.WriteLine(SearchInsert(nums, target));
         }
 
-        static int SearchInsert(int[] nums, int target) 
+        int SearchInsert(int[] nums, int target) 
         {
             int start=0, end=nums.Length-1, mid=0;
             while(start<=end)

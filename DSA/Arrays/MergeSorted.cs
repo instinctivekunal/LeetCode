@@ -1,13 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Arrays
+namespace DSA_C.Arrays
 {
     public class MergeSorted
     {
-        public static void Start()
+        public void Start()
         {
             int[] nums1 = {3,4,6,0,0,0};
             int[] nums2 = {1,2,5};
@@ -17,7 +12,7 @@ namespace Arrays
             Console.WriteLine(string.Join(",", nums1));
         }
 
-        static void Merge(int[] nums1, int m, int[] nums2, int n) 
+         void Merge(int[] nums1, int m, int[] nums2, int n) 
         {
             for(int i=0; i<n; i++)
             {

@@ -1,19 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Arrays
+namespace DSA_C.Arrays
 {
     public class BuildFromPermutation
     {
-        public static void Start()
+        public void Start()
         {
             int[] nums = {0,2,1,5,3,4};
             Console.WriteLine(string.Join(",", BuildArray(nums)));
         }
         
-        static int[] BuildArray(int[] nums) 
+         int[] BuildArray(int[] nums) 
         {
             int[] ans = new int[nums.Length];
             for (int i=0; i<nums.Length; i++)

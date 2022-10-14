@@ -1,13 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace Search
 {
     public class PeakElementII
     {
-        public static void Start()
+        public void Start()
         {
             int[][] mat = new int[][] {
                 new int[] {41,8,2,48,18}, 
@@ -19,7 +14,7 @@ namespace Search
             Console.WriteLine(string.Join(",", FindPeakGrid(mat)));            
         }
 
-        static int[] FindPeakGrid(int[][] mat) 
+         int[] FindPeakGrid(int[][] mat) 
         {
             int start=0, end=mat[0].Length-1, mid=0;
             while(start<=end)
